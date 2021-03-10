@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.6/qs.min.js"
+      integrity="sha512-3TmPrquYLaAsUmZKXRARTDC5siWhLAdBVqNo4dWpDABBtLU62AaoTaQJEvjxjExcZYurO6i1dnK85k8pPIBlRg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body style="font-family: Poppins, sans-serif">
+    <a
+      class="navbar-brand"
+      href="#"
+      style="
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+        color: #9a2ca0;
+        margin: 10px 30px;
+      "
+      ><img
+        src="pablo-270.png"
+        height="40px"
+        style="margin-right: 20px"
+      />Collaborator</a
+    >
+    <div style="margin-top: 0px">
+      <div class="row">
+        <div class="col">
+          <img src="pablo-online-service-chat.png" width="800px" />
+        </div>
+        <div class="col">
+          <div style="width: 90%; margin-top: 100px">
+            <h2 style="color: #9a2ca0">
+              <img
+                src="https://img.icons8.com/cotton/64/000000/chat.png"
+                style="margin-right: 20px"
+              />Join or create a chat room
+            </h2>
+            <form style="margin-top: 60px">
+              <div class="form-group">
+                <input
+                  id="username"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Username"
+                />
+              </div>
+              <div class="form-group" style="margin-top: 40px">
+                <label>Select Chatroom</label>
+                <select
+                  class="form-control"
+                  id="room"
+                  aria-placeholder="Choose Room"
+                >
+                  <option>Javascript</option>
+                  <option>Health</option>
+                  <option>Social</option>
+                  <option>Politics</option>
+                  <option>Education</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-top: 50px">
+                <label>Enter room name</label>
+                <input
+                  type="text"
+                  id="new-room"
+                  class="form-control"
+                  placeholder="Enter name"
+                />
+              </div>
+            </form>
+            <button
+              type="button"
+              id="enter-room"
+              onclick="relocate()"
+              class="btn btn-primary btn-lg btn-block"
+              style="margin-top: 70px; background-color: #9a2ca0; border: none"
+            >
+              Enter Room
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/home.js"></script>
+</html>

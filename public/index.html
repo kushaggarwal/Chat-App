@@ -72,6 +72,7 @@
         <div class="row">
           <div class="col-3">
             <div
+              id="room-name"
               style="
                 margin: 20px 0px 0px 40px;
                 font-weight: 700;
@@ -80,7 +81,7 @@
                 margin: 30px 30px 15px 30px;
               "
             >
-              Javascript <span style="color: #9a2ca0">.</span>
+              <span style="color: #9a2ca0">.</span>
             </div>
             <hr style="width: 90%" />
             <div class="row">
@@ -91,6 +92,7 @@
               </div>
               <div class="col-2">
                 <div
+                  id="users-count"
                   style="
                     background-color: #9a2ca0;
                     height: 22px;
@@ -101,73 +103,10 @@
                     text-align: center;
                     margin-bottom: 5px;
                   "
-                >
-                  2
-                </div>
+                ></div>
               </div>
             </div>
-            <div style="margin-top: 20px">
-              <div class="row">
-                <div class="col-3">
-                  <div style="margin: 10px 30px; border-radius: 50px">
-                    <img
-                      src="https://semantic-ui.com/images/avatar/large/christian.jpg"
-                      height="50px"
-                      width="50px"
-                      class="rounded-circle"
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <h4 style="margin: 20px 30px">John Doe</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-3">
-                  <div style="margin: 20px 30px; border-radius: 50px">
-                    <img
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLsl-YJ5JCBLxr5eUoR1zY0S3UUfZHN9rUOwAsg9gfNwY1BZV24Ql0_MF4Z0YHt6ObAxw&usqp=CAU"
-                      height="50px"
-                      width="50px"
-                      class="rounded-circle"
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <h4 style="margin: 30px 30px">Sophia</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-3">
-                  <div style="margin: 20px 30px; border-radius: 50px">
-                    <img
-                      src="https://semantic-ui.com/images/avatar/large/joe.jpg"
-                      height="50px"
-                      width="50px"
-                      class="rounded-circle"
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <h4 style="margin: 30px 30px">Jimmy</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-3">
-                  <div style="margin: 20px 30px; border-radius: 50px">
-                    <img
-                      src="https://react.semantic-ui.com/images/avatar/large/justen.jpg"
-                      height="50px"
-                      width="50px"
-                      class="rounded-circle"
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <h4 style="margin: 30px 30px">Sebestian</h4>
-                </div>
-              </div>
-            </div>
+            <div style="margin-top: 20px" id="users"></div>
           </div>
           <div class="col">
             <div
@@ -178,46 +117,19 @@
                 border-bottom-right-radius: 30px;
               "
             >
-              <div style="padding: 20px">
-                <div
-                  style="
-                    padding: 10px 25px;
-                    background-color: white;
-                    border-radius: 20px;
-                  "
-                >
-                  <h5 style="display: inline-block">John</h5>
-                  <div
-                    style="
-                      display: inline-block;
-                      height: 15px;
-                      background-color: lightgrey;
-                      border: 1px solid lightgrey;
-                      margin: 0px 10px;
-                    "
-                  ></div>
-                  <div
-                    style="
-                      color: #9a2ca0;
-                      font-weight: 400;
-                      display: inline-block;
-                    "
-                  >
-                    22:34 PM
-                  </div>
-                  <div style="font-weight: 400; color: rgb(172, 170, 170)">
-                    Hello I am Kush sfdsfsdfsdf sdfsd
-                  </div>
-                </div>
-              </div>
+              <div
+                id="all-messages"
+                style="overflow: scroll; height: 700px; padding-top: 20px"
+              ></div>
+
               <div
                 style="
                   width: 97.5%;
                   height: 100px;
-                  background-color: white;
-                  border-bottom-right-radius: 30px;
+                  border-radius: 50px;
                   position: absolute;
                   bottom: 0;
+                  margin-bottom: 20px;
                 "
               >
                 <div style="margin-top: 20px">
@@ -232,9 +144,10 @@
                           style="
                             margin-top: 5px;
                             width: 100%;
-                            padding: 10px;
-                            border-radius: 20px;
-                            border: 1px solid lightgrey;
+                            padding: 20px;
+                            border-radius: 30px;
+                            outline: none;
+                            border: 1px solid white;
                           "
                         />
                       </div>
@@ -246,7 +159,7 @@
                             width: 90px;
                             border-radius: 30px;
                             margin-left: 0px;
-                            margin-top: 7px;
+                            margin-top: 17px;
                             text-align: center;
                             color: white;
                             padding-top: 0px;
@@ -267,16 +180,14 @@
       </div>
     </div>
 
-    <div id="room-name"></div>
     <div class="demoarea">
       <div id="visibility-ratio-1" class="openseadragon"></div>
     </div>
-    <ul id="users"></ul>
+    <!-- <div id="users"></div> -->
     <!-- <form id="chat-form">
       <input id="msg" type="text" placeholder="Enter your message" required />
       <button>Submit</button>
     </form> -->
-    <div id="all-messages"></div>
   </body>
   <script src="js/main.js"></script>
 </html>

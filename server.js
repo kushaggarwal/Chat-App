@@ -25,7 +25,7 @@ io.on("connection", (socket) => {
       .to(user.room)
       .emit(
         "message",
-        formatMessages(botName, `A ${user.username} has joined a chat`)
+        formatMessages(botName, `${user.username} has joined a chat`)
       );
 
     io.to(user.room).emit("roomUsers", {
@@ -40,7 +40,7 @@ io.on("connection", (socket) => {
       console.log("in disconnect", user);
       io.to(user.room).emit(
         "message",
-        formatMessages(botName, `a ${user.username} has left`)
+        formatMessages(botName, `${user.username} has left`)
       );
       io.to(user.room).emit("roomUsers", {
         room: user.room,
